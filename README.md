@@ -1,1 +1,1 @@
-brewery 레시
+brewery 레시피 
