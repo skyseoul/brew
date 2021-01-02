@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -53,514 +53,594 @@ effects: 효과
 
 <h3>조합법</h3>
 
+#레시피
 <pre>
 
-  bongha:
-    name: 짝퉁 봉하쌀 막걸리/봉하쌀 막걸리/성능좋은 §e노무현식§r §f봉하쌀§r 막걸리
-    ingredients:
-      - sugar/5
-      - wheat/23
-    cookingtime: 5
-    distillruns: 2
-    distilltime: 150
-    age: 3
-    color: 'ffff00'
-    difficulty: 5
-    alcohol: 23
-    lore:
-      - ++§e중력의 맛
-      - +++§e거부할수 없는 중력의 맛
-      - §a약간의 확률로 피아제가 들어있을 수 있다.
-    effects:
-      - SLOW_FALLING/1/100-300
-      - FIRE_RESISTANCE/120
-
-  wine:
-    name: 1년산 와인/15년산 와인/§430년산 와인
-    ingredients:
-      - sweet_berries/15
-    cookingtime: 25
-    age: 5
-    color: 'd60000'
-    difficulty: 8
-    alcohol: 15
-    lore:
-      - ++
-      - +++
-    effects:
-      - speed/1-2/300
-
-  soju:
-    name: 참이슬 후레쉬/§2참이슬 §4오리지널/§2참이슬 §6골드
-    ingredients:
-      - wheat/13
-    cookingtime: 8
-    distillruns: 4
-    distilltime: 120
-    age: 2
-    color: '00b806'
-    difficulty: 5
-    alcohol: 12
-    lore:
-      - §b씹근본
-    effects:
-      - regeneration/1/30
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>brewery 레시피</title>
+        <link rel="icon" href="https://i.ibb.co/WxyPMXW/brewing-stand.png" />
+        <link rel="shortcut icon" href="https://i.ibb.co/WxyPMXW/brewing-stand.png" />
+    </head>
+    
+    
+    <style>
+    pre{
+    font-family: "Malgun Gothic", Georgia, serif;
+    font-size: large
+    }
+    body{
+    background-color: #9fff87;
+    }
+    
+     
+    </style>
+    
+    <h3>brewery 플러그인 위키(술 만드는 방법)</h3>
+    
+    <p>영어(기본)</p>
+    <a href = "https://github.com/DieReicheErethons/Brewery/wiki/Usage">https://github.com/DieReicheErethons/Brewery/wiki/Usage</a> <br> 
+    
+    <p>한글(번역기)</p>
+    <a href = "https://papago.naver.net/website?locale=ko&source=en&target=ko&url=https%3A%2F%2Fgithub.com%2FDieReicheErethons%2FBrewery%2Fwiki%2FUsage">https://papago.naver.net/website?locale=ko&source=en&target=ko&url=https%3A%2F%2Fgithub.com%2FDieReicheErethons%2FBrewery%2Fwiki%2FUsage</a>
+    
+    <br>
+    
+    <h3>설명</h3>
+    
+    <pre>
+    
+    name: 술의 이름
+    ingredients: 술의 재료
+    (재료이름/수량)
+    cookingtime: 조리시간(분)
+    distillruns: 증류 횟수
+    distilltime: 증류 시간
+    wood: 통의 종류
+    (없으면 아무 통이나, 있으면 1 자작 2 참나무 3 정글 4 가문비 5 아카시아 6 짙참)
+    age: 통에 넣는 시간
+    (1 : 20분)
+    color: 술의 색
+    alcohol: 알코올 양
+    effects: 효과
+    
+    </pre>
+    
+    <h3>조합법</h3>
+    
+    <pre>
+        bongha:
+        name: 짝퉁 봉하쌀 막걸리/봉하쌀 막걸리/성능좋은 §e노무현식§r §f봉하쌀§r 막걸리
+        ingredients:
+          - sugar/5
+          - wheat/23
+        cookingtime: 5
+        distillruns: 2
+        distilltime: 150
+        age: 3
+        color: 'ffff00'
+        difficulty: 5
+        alcohol: 23
+        lore:
+          - ++§e중력의 맛
+          - +++§e거부할수 없는 중력의 맛
+          - §a약간의 확률로 피아제가 들어있을 수 있다.
+        effects:
+          - SLOW_FALLING/1/100-300
+          - FIRE_RESISTANCE/120
+    
+      wine:
+        name: 1년산 와인/15년산 와인/§430년산 와인
+        ingredients:
+          - sweet_berries/15
+        cookingtime: 25
+        age: 5
+        color: 'd60000'
+        difficulty: 8
+        alcohol: 15
+        lore:
+          - ++
+          - +++
+        effects:
+          - speed/1-2/300
+    
+      soju:
+        name: 참이슬 후레쉬/§2참이슬 §4오리지널/§2참이슬 §6골드
+        ingredients:
+          - wheat/13
+        cookingtime: 8
+        distillruns: 4
+        distilltime: 120
+        age: 2
+        color: '00b806'
+        difficulty: 5
+        alcohol: 12
+        lore:
+          - §b씹근본
+        effects:
+          - regeneration/1/30
+          
+      vodka:
+        name: 싸구려 보드카/보드카/진한 보드카
+        ingredients:
+          - potato/15
+        cookingtime: 15
+        distillruns: 4
+        distilltime: 150
+        color: 'ededed'
+        difficulty: 3
+        alcohol: 30
+        lore:
+          - 러시아의 맛
+        effects:
+          - health_boost/2/100
+        
+      vodka2:
+        name: 수박 보드카/§a수박§r 보드카/§b시원한§r §a수박§r 보드카
+        ingredients:
+          - melon_slice/10
+          - wheat/10
+        cookingtime: 13
+        distillruns: 3
+        distilltime: 150
+        age: 1
+        color: '47ff3d'
+        difficulty: 4
+        alcohol: 15
+        lore:
+          - 시원한 §a수박 맛
+        effects:
+          - health_boost/2/100
+          - Speed/1/60-120
+    
+      watermelon:
+        name: 수박 주스/수박 주스/§a시원한 §4수박 주스
+        ingredients:
+          - melon_slice/20
+        cookingtime: 10
+        color: 'ff0000'
+        difficulty: 5
+        alcohol: 0
+        lore:
+          - 시원한 §a수박 맛
+        effects:
+          - speed/1/120-240
+          #- STRENGTH/120-240
+    
+      wither2:
+        name: 망친 네더주/네더주/§c성능좋은 §3네더주
+        ingredients:
+          - wither_rose/6
+          - crimson_fungus/2
+          - warped_fungus/2
+        cookingtime: 8
+        distillruns: 2
+        distilltime: 120
+        wood: 4
+        age: 1
+        color: 'ff0099'
+        difficulty: 6
+        alcohol: 12
+        lore:
+          - ++§4네더의 맛
+          - +++§4깊은 네더의 맛
+        effects:
+          - FIRE_RESISTANCE/1/200-300
       
-  vodka:
-    name: 싸구려 보드카/보드카/진한 보드카
-    ingredients:
-      - potato/15
-    cookingtime: 15
-    distillruns: 4
-    distilltime: 150
-    color: 'ededed'
-    difficulty: 3
-    alcohol: 30
-    lore:
-      - 러시아의 맛
-    effects:
-      - health_boost/2/100
+      wither:
+        name: 망친 위더주/§k위더§r위더주§k위더§r/§l§k성능좋은§r §l성능좋은 위더주 §l§k성능좋은§r
+        ingredients:
+          - wither_skeleton_skull/3
+          - nether_star/1
+        cookingtime: 4
+        distillruns: 4
+        distilltime: 44
+        age: 4
+        color: '242424'
+        difficulty: 8
+        alcohol: 50
+        lore:
+          - +++강력한 위더 맛
+        effects:
+          - FIRE_RESISTANCE/1/300-600
+          - SPEED/2/200
+          - FAST_DIGGING/2/200
     
-  vodka2:
-    name: 수박 보드카/§a수박§r 보드카/§b시원한§r §a수박§r 보드카
-    ingredients:
-      - melon_slice/10
-      - wheat/10
-    cookingtime: 13
-    distillruns: 3
-    distilltime: 150
-    age: 1
-    color: '47ff3d'
-    difficulty: 4
-    alcohol: 15
-    lore:
-      - 시원한 §a수박 맛
-    effects:
-      - health_boost/2/100
-      - Speed/1/60-120
-
-  watermelon:
-    name: 수박 주스/수박 주스/§a시원한 §4수박 주스
-    ingredients:
-      - melon_slice/20
-    cookingtime: 10
-    color: 'ff0000'
-    difficulty: 5
-    alcohol: 0
-    lore:
-      - 시원한 §a수박 맛
-    effects:
-      - speed/1/120-240
-      #- STRENGTH/120-240
-
-  wither2:
-    name: 망친 네더주/네더주/§c성능좋은 §3네더주
-    ingredients:
-      - wither_rose/6
-      - crimson_fungus/2
-      - warped_fungus/2
-    cookingtime: 8
-    distillruns: 2
-    distilltime: 120
-    wood: 4
-    age: 1
-    color: 'ff0099'
-    difficulty: 6
-    alcohol: 12
-    lore:
-      - ++§4네더의 맛
-      - +++§4깊은 네더의 맛
-    effects:
-      - FIRE_RESISTANCE/1/200-300
-  
-  wither:
-    name: 망친 위더주/§k위더§r위더주§k위더§r/§l§k성능좋은§r §l성능좋은 위더주 §l§k성능좋은§r
-    ingredients:
-      - wither_skeleton_skull/3
-      - nether_star/1
-    cookingtime: 4
-    distillruns: 4
-    distilltime: 44
-    age: 4
-    color: '242424'
-    difficulty: 8
-    alcohol: 50
-    lore:
-      - +++강력한 위더 맛
-    effects:
-      - FIRE_RESISTANCE/1/300-600
-      - SPEED/2/200
-      - FAST_DIGGING/2/200
-
-  ender:
-    name: 망친 엔더주/엔더주/§1성능좋은 §5엔더주
-    ingredients:
-      - chorus_fruit/8
-      - ender_pearl/4
-    cookingtime: 8
-    distillruns: 4
-    distilltime: 150
-    wood: 3
-    age: 3
-    color: '00024a'
-    difficulty: 8
-    alcohol: 18
-    lore:
-      - ++§4엔더의 맛
-      - +++§4깊은 엔더의 맛
-    effects:
-      - levitation/2-3/5-7
-
-  potato:
-    name: 싸구려 감자주/§6감자주/§6고소한 감자주
-    ingredients:
-      - potato/10
-    cookingtime: 12
-    distillruns: 5
-    distilltime: 200
-    age: 5
-    color: 'b39e00'
-    difficulty: 5
-    alcohol: 10
-    lore:
-      - 고소한 감자맛
-    effects:
-      - saturation/30-60
-
-  coffee1:
-    name: 쓴 아메리카노/아메리카노/§l진한 §6아메리카노§r
-    ingredients:
-      - cocoa_beans/20
-    cookingtime: 10
-    distillruns: 3
-    distilltime: 100
-    age: 1
-    color: '422e11'
-    difficulty: 8
-    alcohol: 0
-    lore:
-      - +쓴 원두 향
-      - ++원두 향
-      - +++깊은 원두 향
-    effects:
-      - speed/1-2/200-300
-      - Regeneration/1/30
-
-  coffee2:
-    name: 쓴 카페라떼/카페라떼/§6달콤한 카페라떼
-    ingredients:
-      - cocoa_beans/12
-      - sugar/5
-      - milk_bucket/1
-    cookingtime: 5
-    distillruns: 2
-    distilltime: 80
-    color: '523d1f'
-    difficulty: 6
-    alcohol: 0
-    lore:
-      - +++달콤한 맛이 난다
-    effects:
-      - speed/1-2/150-200
-      - regeneration/1/20
-
-  icecoffee:
-    name: 쓴 아이스 아메리카노/§b아이스§r 아메리카노/§1진한§r §b아이스§r §6아메리카노§r
-    ingredients:
-      - cocoa_beans/20
-      - snowball/4
-    cookingtime: 10
-    distillruns: 3
-    distilltime: 100
-    color: '422e11'
-    difficulty: 7
-    alcohol: 0
-    lore:
-      - ++시원한 아메리카노
-      - +++시원한 아메리카노
-    effects:
-      - speed/1-2/180-250
-      - regeneration/1/30
-
-  apple1:
-    name: 사과주/§c사과주/§4달콤한§r §6사과주
-    ingredients:
-      - apple/15
-    cookingtime: 5
-    distillruns: 3
-    distilltime: 100
-    color: 'e82525'
-    difficulty: 5
-    alcohol: 8
-    effects:
-      - speed/1/200-400
-      - FAST_DIGGING/1-2/200-400
-
-  apple2:
-    name: 사과 주스/§c사과 주스/§4달콤한 사과§r §6주스
-    ingredients:
-      - apple/10
-      - sugar/2
-      - honey_bottle/1
-    cookingtime: 5
-    color: 'e82525'
-    difficulty: 5
-    alcohol: 0
-    lore:
-    effects:
-      - speed/1/200-400
-      - FAST_DIGGING/1-2/200-400
+      ender:
+        name: 망친 엔더주/엔더주/§1성능좋은 §5엔더주
+        ingredients:
+          - chorus_fruit/8
+          - ender_pearl/4
+        cookingtime: 8
+        distillruns: 4
+        distilltime: 150
+        wood: 3
+        age: 3
+        color: '00024a'
+        difficulty: 8
+        alcohol: 18
+        lore:
+          - ++§4엔더의 맛
+          - +++§4깊은 엔더의 맛
+        effects:
+          - levitation/2-3/5-7
     
-
-  hot_choc:
-    name: 식은 핫초코/핫초코/§6따뜻한 §6핫초코
-    ingredients:
-      - cocoa_beans/12
-      - milk_bucket/1
-    cookingtime: 12
-    color: DARK_RED
-    difficulty: 5
-    lore:
-      - ++달콤한 초코향
-      - +++달콤하고 따뜻한 초코향
-    effects:
-      - FAST_DIGGING/1/120-240
-
-  whiskey:
-    name: 싸구려 위스키/위스키/§d스카치 §6위스키§r
-    ingredients:
-       - Wheat/10
-       - potato/8
-    cookingtime: 12
-    distillruns: 5
-    distilltime: 100
-    wood: 4
-    age: 18
-    color: ORANGE
-    difficulty: 7
-    alcohol: 20
-
-  #네더라이트파편 다이아몬드 금 철 네더석영 에메랄드 석탄 청금석 레드스톤
-
-  miner:
-    name: 광부의 술/광부의 술/§l§e고급 광부의 술
-    ingredients:
-      - netherite_scrap/1
-      - diamond/1
-      - gold_ingot/1
-      - iron_ingot/1
-      - quartz/1
-      - emerald/1
-      - coal/1
-      - lapis_lazuli/1
-      - redstone/1
-    cookingtime: 10
-    age: 3
-    color: '00ffbb'
-    difficulty: 3
-    alcohol: 3
-    effects:
-      - FAST_DIGGING/2/600-1000
-      - SPEED/2/200-300
-      - regeneration/1/50
-      - Absorption/1/200-300
-      - Saturation/1/200-300
-
-  rum:
-    name: 쓴 럼주/럼주/§0다크 럼주
-    ingredients:
-      - sugar_cane/12
-    cookingtime: 8
-    distillruns: 2
-    distilltime: 160
-    age: 5
-    color: 'ffc400'
-    difficulty: 5
-    alcohol: 15
-
-  turtle:
-    name: 거북이 술
-    ingredients:
-      - scute/2
-    cookingtime: 10
-    age: 2
-    color: '40ff00'
-    alcohol: 10
-    difficulty: 8
-    effects:
-      - water_breathing/1/120-240
-
-  moon:
-    name: 가짜 척수액/§2문크예거의 §b척수액/§2문크예거의 §b척수액
-    ingredients:
-      - wither_rose/4
-      - poppy/4
-      - pufferfish/4
-    cookingtime: 8
-    distillruns: 3
-    distilltime: 120
-    age: 3
-    color: '000000'
-    alcohol: 18
-    difficulty: 5
-    lore:
-      - 유일한 구원.. 조선인의 안락사..
-    effects:
-      - wither/10/180
-    drinkmessage: |
-      §l이 세상에서 조선인을 모두 없애는 것..
-      §l유일한.. 구원.. 조선인의.. 안락사..
-
-  boom:
-    name: 싸구려 폭탄주/폭탄주/§1원자 폭탄주
-    ingredients:
-      - tnt/3
-      - gunpowder/10
-    cookingtime: 12
-    distillruns: 5
-    distilltime: 150
-    age: 3
-    color: '828282' #톤 김지영
-    alcohol: 20
-    difficulty: 5
-    lore:
-      - §a술이 펑 터질것만 같아
-    effects:
-      - poison/3/30
-
-  brandy:
-    name: 브랜디
-    ingredients:
-      - sweet_Berries/15
-    cookingtime: 15
-    distillruns: 5
-    distilltime: 100
-    age: 5
-    color: 'ff8400'
-    alcohol: 14
-    difficulty: 5
-    lore:
-      - 진한 맛
-    effects:
-      - speed/1/120-240
-
-  honey:
-    name: 벌꿀 술/벌꿀 술/§6달콤한 벌꿀 술
-    ingredients:
-      - honey_bottle/5
-    cookingtime: 5
-    age: 2
-    color: 'ffa600'
-    alcohol: 6
-    difficulty: 8
-    lore:
-      - §6달콤한 맛
-    effects:
-      - speed/1/60
-      - FAST_DIGGING/1/30
-
-  sake:
-    name: 사케
-    ingredients:
-      - pumpkin_seeds/15
-      - wheat_seeds/5
-    cookingtime: 20
-    age: 2
-    color: '3f0069'
-    wood: 1
-    alcohol: 15
-    difficulty: 9
-
-  beer:
-    name: §6밀 맥주§r
-    ingredients:
-      - wheat/5
-    cookingtime: 8
-    distillruns: 1
-    distilltime: 100
-    age: 3
-    color: 'f2c200'
-    alcohol: 8
-    difficulty: 9
-    wood: 1
-    lore:
-      - 가장 연한 맥주
-
-  beer2:
-    name: §6맥주§r
-    ingredients:
-      - wheat/12
-    cookingtime: 8
-    distillruns: 2
-    distilltime: 120
-    age: 3
-    color: 'cfa600'
-    alcohol: 12
-    difficulty: 9
-    lore:
-      - 기본 맥주
-
-
-  beer3:
-    name: §6진한 맥주§r
-    ingredients: 
-      - wheat/16
-    cookingtime: 8
-    age: 8
-    wood: 4
-    distillruns: 3
-    distilltime: 140
-    color: '42370a'
-    alcohol: 16
-    difficulty: 9
-    lore:
-      - 가장 진한 맥주
+      potato:
+        name: 싸구려 감자주/§6감자주/§6고소한 감자주
+        ingredients:
+          - potato/10
+        cookingtime: 12
+        distillruns: 5
+        distilltime: 200
+        age: 5
+        color: 'b39e00'
+        difficulty: 5
+        alcohol: 10
+        lore:
+          - 고소한 감자맛
+        effects:
+          - saturation/30-60
     
-  pumpkinspicedbeer:
-    name: §6호박씨 맥주§r
-    ingredients:
-      - pumpkin/5
-      - sugar/10
-      - wheat/10
-      - pumpkin_seeds/5
-    cookingtime: 5
-    age: 4
-    wood: 3
-    color: 'ff9d00'
-    alcohol: 9
-    difficulty: 9
-    lore:
-      - 호박맛 맥주
-
-  applecider:
-    name: 쓴 사과 사이다/사과 사이다/§4달콤한 사과 사이다§r
-    ingredients: 
-      - sugar/10
-      - apple/10
-    cookingtime: 5
-    distillruns: 2
-    distilltime: 60
-    color: 'cf0e0e'
-    alcohol: 2
-    difficulty: 10
-    lore:
-      - §c달콤하고 상큼한 맛§r
-
-  cho:
-    name: 후렴주
-    ingredients:
-      - chorus_flower/5
-      - chorus_fruit/10
-      - popped_chorus_fruit/8
-      - sugar/10
-    cookingtime: 6
-    distillruns: 2
-    distilltime: 160
-    age: 5
-    wood: 5
-    color: '9000ff'
-    alcohol: 6
-    difficulty: 8
+      coffee1:
+        name: 쓴 아메리카노/아메리카노/§l진한 §6아메리카노§r
+        ingredients:
+          - cocoa_beans/20
+        cookingtime: 10
+        distillruns: 3
+        distilltime: 100
+        age: 1
+        color: '422e11'
+        difficulty: 8
+        alcohol: 0
+        lore:
+          - +쓴 원두 향
+          - ++원두 향
+          - +++깊은 원두 향
+        effects:
+          - speed/1-2/200-300
+          - Regeneration/1/30
+    
+      coffee2:
+        name: 쓴 카페라떼/카페라떼/§6달콤한 카페라떼
+        ingredients:
+          - cocoa_beans/12
+          - sugar/5
+          - milk_bucket/1
+        cookingtime: 5
+        distillruns: 2
+        distilltime: 80
+        color: '523d1f'
+        difficulty: 6
+        alcohol: 0
+        lore:
+          - +++달콤한 맛이 난다
+        effects:
+          - speed/1-2/150-200
+          - regeneration/1/20
+    
+      icecoffee:
+        name: 쓴 아이스 아메리카노/§b아이스§r 아메리카노/§1진한§r §b아이스§r §6아메리카노§r
+        ingredients:
+          - cocoa_beans/20
+          - snowball/4
+        cookingtime: 10
+        distillruns: 3
+        distilltime: 100
+        color: '422e11'
+        difficulty: 7
+        alcohol: 0
+        lore:
+          - ++시원한 아메리카노
+          - +++시원한 아메리카노
+        effects:
+          - speed/1-2/180-250
+          - regeneration/1/30
+    
+      apple1:
+        name: 사과주/§c사과주/§4달콤한§r §6사과주
+        ingredients:
+          - apple/15
+        cookingtime: 5
+        distillruns: 3
+        distilltime: 100
+        color: 'e82525'
+        difficulty: 5
+        alcohol: 8
+        effects:
+          - speed/1/200-400
+          - FAST_DIGGING/1-2/200-400
+    
+      apple2:
+        name: 사과 주스/§c사과 주스/§4달콤한 사과§r §6주스
+        ingredients:
+          - apple/10
+          - sugar/2
+          - honey_bottle/1
+        cookingtime: 5
+        color: 'e82525'
+        difficulty: 5
+        alcohol: 0
+        lore:
+        effects:
+          - speed/1/200-400
+          - FAST_DIGGING/1-2/200-400
+        
+    
+      hot_choc:
+        name: 식은 핫초코/핫초코/§6따뜻한 §6핫초코
+        ingredients:
+          - cocoa_beans/12
+          - milk_bucket/1
+        cookingtime: 12
+        color: DARK_RED
+        difficulty: 5
+        lore:
+          - ++달콤한 초코향
+          - +++달콤하고 따뜻한 초코향
+        effects:
+          - FAST_DIGGING/1/120-240
+    
+      whiskey:
+        name: 싸구려 위스키/위스키/§d스카치 §6위스키§r
+        ingredients:
+           - Wheat/10
+           - potato/8
+        cookingtime: 12
+        distillruns: 5
+        distilltime: 100
+        wood: 4
+        age: 18
+        color: ORANGE
+        difficulty: 7
+        alcohol: 20
+    
+      #네더라이트파편 다이아몬드 금 철 네더석영 에메랄드 석탄 청금석 레드스톤
+    
+      miner:
+        name: 광부의 술/광부의 술/§l§e고급 광부의 술
+        ingredients:
+          - netherite_scrap/1
+          - diamond/1
+          - gold_ingot/1
+          - iron_ingot/1
+          - quartz/1
+          - emerald/1
+          - coal/1
+          - lapis_lazuli/1
+          - redstone/1
+        cookingtime: 10
+        age: 3
+        color: '00ffbb'
+        difficulty: 3
+        alcohol: 3
+        effects:
+          - FAST_DIGGING/2/600-1000
+          - SPEED/2/200-300
+          - regeneration/1/50
+          - Absorption/1/200-300
+          - Saturation/1/200-300
+    
+      rum:
+        name: 쓴 럼주/럼주/§0다크 럼주
+        ingredients:
+          - sugar_cane/12
+        cookingtime: 8
+        distillruns: 2
+        distilltime: 160
+        age: 5
+        color: 'ffc400'
+        difficulty: 5
+        alcohol: 15
+    
+      turtle:
+        name: 거북이 술
+        ingredients:
+          - scute/2
+        cookingtime: 10
+        age: 2
+        color: '40ff00'
+        alcohol: 10
+        difficulty: 8
+        effects:
+          - water_breathing/1/120-240
+    
+      moon:
+        name: 가짜 척수액/§2문크예거의 §b척수액/§2문크예거의 §b척수액
+        ingredients:
+          - wither_rose/4
+          - poppy/4
+          - pufferfish/4
+        cookingtime: 8
+        distillruns: 3
+        distilltime: 120
+        age: 3
+        color: '000000'
+        alcohol: 18
+        difficulty: 5
+        lore:
+          - 유일한 구원.. 조선인의 안락사..
+        effects:
+          - wither/10/180
+        drinkmessage: |
+          §l이 세상에서 조선인을 모두 없애는 것..
+          §l유일한.. 구원.. 조선인의.. 안락사..
+    
+      boom:
+        name: 싸구려 폭탄주/폭탄주/§1원자 폭탄주
+        ingredients:
+          - tnt/3
+          - gunpowder/10
+        cookingtime: 12
+        distillruns: 5
+        distilltime: 150
+        age: 3
+        color: '828282' #톤 김지영
+        alcohol: 20
+        difficulty: 5
+        lore:
+          - §a술이 펑 터질것만 같아
+        effects:
+          - poison/3/30
+    
+      brandy:
+        name: 브랜디
+        ingredients:
+          - sweet_Berries/15
+        cookingtime: 15
+        distillruns: 5
+        distilltime: 100
+        age: 5
+        color: 'ff8400'
+        alcohol: 14
+        difficulty: 5
+        lore:
+          - 진한 맛
+        effects:
+          - speed/1/120-240
+    
+      honey:
+        name: 벌꿀 술/벌꿀 술/§6달콤한 벌꿀 술
+        ingredients:
+          - honey_bottle/5
+        cookingtime: 5
+        age: 2
+        color: 'ffa600'
+        alcohol: 6
+        difficulty: 8
+        lore:
+          - §6달콤한 맛
+        effects:
+          - speed/1/60
+          - FAST_DIGGING/1/30
+    
+      sake:
+        name: 사케
+        ingredients:
+          - pumpkin_seeds/15
+          - wheat_seeds/5
+        cookingtime: 20
+        age: 2
+        color: '3f0069'
+        wood: 1
+        alcohol: 15
+        difficulty: 9
+    
+      beer:
+        name: §6밀 맥주§r
+        ingredients:
+          - wheat/5
+        cookingtime: 8
+        distillruns: 1
+        distilltime: 100
+        age: 3
+        color: 'f2c200'
+        alcohol: 8
+        difficulty: 9
+        wood: 1
+        lore:
+          - 가장 연한 맥주
+    
+      beer2:
+        name: §6맥주§r
+        ingredients:
+          - wheat/12
+        cookingtime: 8
+        distillruns: 2
+        distilltime: 120
+        age: 3
+        color: 'cfa600'
+        alcohol: 12
+        difficulty: 9
+        lore:
+          - 기본 맥주
+    
+    
+      beer3:
+        name: §6진한 맥주§r
+        ingredients: 
+          - wheat/16
+        cookingtime: 8
+        age: 8
+        wood: 4
+        distillruns: 3
+        distilltime: 140
+        color: '42370a'
+        alcohol: 16
+        difficulty: 9
+        lore:
+          - 가장 진한 맥주
+        
+      pumpkinspicedbeer:
+        name: §6호박씨 맥주§r
+        ingredients:
+          - pumpkin/5
+          - sugar/10
+          - wheat/10
+          - pumpkin_seeds/5
+        cookingtime: 5
+        age: 4
+        wood: 3
+        color: 'ff9d00'
+        alcohol: 9
+        difficulty: 9
+        lore:
+          - 호박맛 맥주
+    
+      applecider:
+        name: 쓴 사과 사이다/사과 사이다/§4달콤한 사과 사이다§r
+        ingredients: 
+          - sugar/10
+          - apple/10
+        cookingtime: 5
+        distillruns: 2
+        distilltime: 60
+        color: 'cf0e0e'
+        alcohol: 2
+        difficulty: 10
+        lore:
+          - §c달콤하고 상큼한 맛§r
+    
+      cho:
+        name: 후렴주
+        ingredients:
+          - chorus_flower/5
+          - chorus_fruit/10
+          - popped_chorus_fruit/8
+          - sugar/10
+        cookingtime: 6
+        distillruns: 2
+        distilltime: 160
+        age: 5
+        wood: 5
+        color: '9000ff'
+        alcohol: 6
+        difficulty: 8
+    
+      nomu:
+        name: 피해자의 눈물
+        ingredients:
+          - ghast_tear/3
+        cookingtime: 8
+        distillruns: 2
+        distilltime: 82
+        color: 'e0e0e0'
+        alcohol: 5
+        difficulty: 8
+        lore:
+          - §b피해자의 눈물이 증거입니다.
+          - §b쿵쾅쿵쾅.
+        effects:
+          - slow/3/200
+          - saturation/10/10
+    </pre>
+    
+    
+    
+    <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Roh_Moohyun_official_portrait.jpg/225px-Roh_Moohyun_official_portrait.jpg">
+    
 </pre>
 
 
